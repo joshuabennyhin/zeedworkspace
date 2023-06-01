@@ -1,14 +1,31 @@
 import Grid from '@mui/material/Grid';
+import { useEffect,useState } from 'react';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 const About=()=>{
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    const handleMediaQueryChange = (event) => {
+      setIsSmallScreen(event.matches);
+    };
+
+    mediaQuery.addListener(handleMediaQueryChange);
+    setIsSmallScreen(mediaQuery.matches);
+
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange);
+    };
+  }, []);
 
 
 return(
 
-<div style={{ fontFamily: 'Gillroy, sans-serif', fontWeight: 800}}>
+<div style={{ fontFamily: 'g-bold'}}>
 
 <div  style={{backgroundColor:"black", fontFamily: 'Gillroy, sans-serif', fontWeight: 800}}class="our container-fluid">
-  <h1 style={{textAlign:"center",paddingTop:"40px",paddingBottom:"40px",color:'#FC772A'}}> We are Serious about your savings plan</h1>
+  <h1 style={{textAlign:"center",paddingTop:"40px",paddingBottom:"40px",color:'#FC772A',fontFamily:"g-bold",fontSize:isSmallScreen?"28px":"38px"}}> We are Serious about your savings plan</h1>
   <div style={{
 
 
@@ -30,10 +47,15 @@ justifyContent:"center",
   <Grid style={{borderRadius:10}} item xs={3}>
    <img style={{height:'80px',width:"80px"}} src="9.png"></img>
   </Grid>
-  <Grid item xs={8}>
-        <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white"}}>Max Trust</p>
-        <p style={{fontSize:"11px",paddingLeft:"10px",fontWeight:"bold",color:"white"}}>your payment towards saving plan is
-        is paid directly to thr jeweller and saved in 22k gold</p>
+  <Grid item xs={8} >
+  <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Trust
+              <div>
+
+              </div>
+
+                <span style={{fontSize:"12px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-bold",marginBottom:"10px"}}> Your payment is directly paid to the Jewellery store</span> 
+             </p>
+
         
   </Grid>
 </Grid>
@@ -46,26 +68,36 @@ justifyContent:"center",
         <img style={{height:'80px',width:"80px"}} src="02.png"></img>
        </Grid>
        <Grid item xs={8}>
-             <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white"}}>Max Safety</p>
-             <p style={{fontSize:"11px",paddingLeft:"10px",paddingBottom:"18px",fontWeight:"bold",color:"white"}}>Every installment you paid till
-             now is ensured</p>
+
+       <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Safety
+              <div>
+
+              </div>
+
+                <span style={{fontSize:"11px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-bold",marginBottom:"10px",marginBottom:"20px"}}> Every installment you paid till now is ensured</span>  
+             </p>
+
+             
              
        </Grid>
      </Grid>
      
            </div>
-           <div  style={{padding:"20px"}}class="col-lg-4 col-sm-7 ">
+           <div  style={{padding:"20px",}}class="col-lg-4 col-sm-7 ">
            
            <Grid  sx={{backgroundColor:"#808080",borderRadius:5,border:" 1px solid #FC772A",marginBottom:"40px"}} container spacing={2}>
        <Grid style={{borderRadius:10}} item xs={3}>
         <img style={{height:'80px',width:"80px"}} src="03.png"></img>
        </Grid>
        <Grid item xs={8}>
-             <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white"}}>Max Security</p>
-             <p style={{fontSize:"11px",paddingLeft:"10px",paddingBottom:"20px",fontWeight:"bold",color:"white"}}>
+             <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Security
+              <div>
 
-              Means bank graded security and iso complainces
+              </div>
+
+                <span style={{fontSize:"11px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-bold",marginBottom:"30px"}}>    Means bank graded security and iso complainces</span>  
              </p>
+          
              
        </Grid>
      </Grid>

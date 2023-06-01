@@ -1,0 +1,37 @@
+.container {
+    width: 90%;
+    padding: 10px;
+    
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  
+  .left-images img {
+    height: 40px;
+  }
+  
+  .right-images img {
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+   .left-images {
+    height:80px;
+   }
+   .left-images img{
+      height:35px;
+
+   }
+   .apple-logo {
+    height:30px;
+   }
+   
+  }
+  

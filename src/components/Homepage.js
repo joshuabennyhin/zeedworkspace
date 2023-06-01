@@ -7,6 +7,8 @@ import FaqSection from './HomepageDetails/Faq';
 import About from './HomepageDetails/About';
 import Navbar from './HomepageDetails/Navbat';
 import Top from './HomepageDetails/Top';
+import { AppBar } from '@mui/material';
+
 
 
 const HomePage = () => {
