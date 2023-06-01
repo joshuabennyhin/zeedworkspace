@@ -1,0 +1,13 @@
+@font-face {
+
+
+    font-family:"g-light";
+    src:url(../public/Gilroy-Light.ttf)
+}
+
+@font-face {
+
+
+    font-family:"g-bold";
+    src:url(../public/Gilroy-ExtraBold.ttf)
+}
