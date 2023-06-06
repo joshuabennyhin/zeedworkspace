@@ -324,12 +324,8 @@ code {
      
       margin: auto;
       width: 80%;
-      height:60px;
-      z-index:999;
+      height:70px;
       /* Add other styling properties for the navbar */
-    }
-    .navbar.scrolled {
-      background: white;
     }
    
     
@@ -351,7 +347,7 @@ code {
       background-repeat: no-repeat;
   background-size: cover;
   position:"relative";
-  /* z-index:1; */
+  z-index:1;
   
 
     }
