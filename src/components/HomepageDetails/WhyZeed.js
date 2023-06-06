@@ -141,7 +141,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="Group 1171275524.svg"
               />
-              <p style={{ fontWeight: 'bold',fontSize: isSmallScreen?'1px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
+              <p style={{ fontWeight: 'bold',fontSize: isSmallScreen?'16px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
                 Rewarding <div></div>Purchase
                 Plan
               </p>
