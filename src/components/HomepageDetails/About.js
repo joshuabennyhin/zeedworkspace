@@ -25,7 +25,7 @@ return(
 <div style={{ fontFamily: 'g-bold'}}>
 
 <div  style={{backgroundColor:"black", fontFamily: 'Gillroy, sans-serif', fontWeight: 800}}class="our container-fluid">
-  <h1 style={{textAlign:"center",paddingTop:"40px",paddingBottom:"40px",color:'#FC772A',fontFamily:"g-bold",fontSize:isSmallScreen?"28px":"38px"}}> We are Serious about your savings plan</h1>
+  <h1 style={{textAlign:"center",paddingTop:"40px",paddingBottom:"40px",color:'#FC772A',fontWeight:"500",fontSize:isSmallScreen?"20px":"38px",fontFamily:"DM Sans"}}> We are Serious about your savings plan</h1>
   <div style={{
 
 
@@ -48,12 +48,12 @@ justifyContent:"center",
    <img style={{height:'80px',width:"80px"}} src="9.png"></img>
   </Grid>
   <Grid item xs={8} >
-  <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Trust
+  <p style={{fontSize:"18px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Trust
               <div>
 
               </div>
 
-                <span style={{fontSize:"12px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-bold",marginBottom:"10px"}}> Your payment is directly paid to the Jewellery store</span> 
+                <span style={{fontSize:"14px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-light",marginBottom:"10px"}}> Your payment is directly paid to the Jewellery store</span> 
              </p>
 
         
@@ -69,12 +69,12 @@ justifyContent:"center",
        </Grid>
        <Grid item xs={8}>
 
-       <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Safety
+       <p style={{fontSize:"18px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Safety
               <div>
 
               </div>
 
-                <span style={{fontSize:"11px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-bold",marginBottom:"10px",marginBottom:"20px"}}> Every installment you paid till now is ensured</span>  
+                <span style={{fontSize:"14px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-light",marginBottom:"10px",marginBottom:"20px"}}> Every installment you paid till now is ensured</span>  
              </p>
 
              
@@ -90,12 +90,12 @@ justifyContent:"center",
         <img style={{height:'80px',width:"80px"}} src="03.png"></img>
        </Grid>
        <Grid item xs={8}>
-             <p style={{fontSize:"14px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Security
+             <p style={{fontSize:"18px",paddingLeft:"10px",fontWeight:"bold",color:"white",fontFamily:"g-bold",paddingTop:"8px"}}>Max Security
               <div>
 
               </div>
 
-                <span style={{fontSize:"11px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-bold",marginBottom:"30px"}}>    Means bank graded security and iso complainces</span>  
+                <span style={{fontSize:"14px",paddingBottom:"15px",fontWeight:"bold",color:"white",fontFamily:"g-light",marginBottom:"30px"}}>    Means bank graded security and iso complainces</span>  
              </p>
           
              

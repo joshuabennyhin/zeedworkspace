@@ -39,7 +39,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="Group 1171275518.svg"
               />
-              <h4 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'13px':'16px', paddingLeft: '10px', paddingRight: '10px' }}>
+              <h4 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'16px':'16px', paddingLeft: '10px', paddingRight: '10px' }}>
                 Zero wastage and making changes
               </h4>
             </div>
@@ -53,7 +53,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="Group 1171275503.svg"
               />
-              <h4 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'13px':'16px', paddingLeft: '40px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
+              <h4 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'16px':'16px', paddingLeft: '40px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
                 First Month Installment Free
               </h4>
             </div>
@@ -67,7 +67,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="Group 1171275559.svg"
               />
-              <h4 style={{ fontWeight: 'bold',fontSize: isSmallScreen?'13px':'16px',paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
+              <h4 style={{ fontWeight: 'bold',fontSize: isSmallScreen?'16px':'16px',paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
                 Free Gold Coins<div>
 
                 </div> and Freebies
@@ -83,7 +83,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="image 17.svg"
               />
-              <h4 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'13px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px'}}>
+              <h4 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'16px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px'}}>
                 Cancel anytime
               </h4>
             </div>
@@ -97,7 +97,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="image 18-1.svg"
               />
-              <h6 style={{ fontWeight: 'bold',fontSize: isSmallScreen?'13px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
+              <h6 style={{ fontWeight: 'bold',fontSize: isSmallScreen?'16px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
                 100% Refund <div>
                   
                 </div>policy
@@ -113,7 +113,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="image 18 (1).svg"
               />
-              <h6 style={{ fontWeight: 'bold',fontSize: isSmallScreen?'13px':'16px',paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
+              <h6 style={{ fontWeight: 'bold',fontSize: isSmallScreen?'16px':'16px',paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
                 Free Insurance & Assistance
               </h6>
             </div>
@@ -127,7 +127,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="Group 1171275485.svg"
               />
-              <h6 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'13px':'16px',paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' ,paddingTop:"10px"}}>
+              <h6 style={{ fontWeight: 'bold', fontSize: isSmallScreen?'16px':'16px',paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' ,paddingTop:"10px"}}>
                 Bill Hallmarked 916 Jewellery
               </h6>
             </div>
@@ -141,7 +141,7 @@ const WhyZeed = () => {
                 alt="Icon instagram"
                 src="Group 1171275524.svg"
               />
-              <p style={{ fontWeight: 'bold',fontSize: isSmallScreen?'13px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
+              <p style={{ fontWeight: 'bold',fontSize: isSmallScreen?'16px':'16px', paddingLeft:isSmallScreen?'0px':'20px', paddingRight:isSmallScreen?'0px':'20px' }}>
                 Rewarding <div></div>Purchase
                 Plan
               </p>

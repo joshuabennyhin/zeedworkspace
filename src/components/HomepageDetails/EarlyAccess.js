@@ -21,9 +21,9 @@ const EarlyAccess=()=>{
   
     return(
        <div  style={{backgroundColor:isSmallScreen?"#FAF9ED":"white",textAlign:"center", fontFamily: 'g-bold', fontWeight: 800}} class="container-fluid">
-             <p style={{paddingTop:"40px",fontSize:isSmallScreen?"25px":"30px",fontFamily:'g-light',fontWeight:"300"}}>Get early access</p>
+             <p style={{paddingTop:"40px",fontSize:isSmallScreen?"24px":"30px",fontFamily:'g-light',fontWeight:"300"}}>Get early access</p>
              <div style={{paddingTop:"20px", backgroundColor:isSmallScreen?"#FAF9ED":"white"}}class="i">
-            <img  style={{height:isSmallScreen?"30px":"35px"}}src="group-1171275491@2x.png" alt="Image 1"/>
+            <img  style={{height:isSmallScreen?"29px":"35px"}}src="group-1171275491@2x.png" alt="Image 1"/>
               
               </div>
               <div style={{paddingTop:"40px",backgroundColor:isSmallScreen?"#FAF9ED":"white",paddingBottom:"50px",}}>
@@ -38,7 +38,7 @@ const EarlyAccess=()=>{
                 
                 
 
-                }}><h6 style={{fontSize:isSmallScreen?'15px':'20px',fontWeight:"bold",color:"white"}}>Get access</h6></button></a>
+                }}><h6 style={{fontSize:isSmallScreen?'14px':'20px',fontWeight:"bold",color:"white"}}>Get access</h6></button></a>
               </div>
        </div>
 

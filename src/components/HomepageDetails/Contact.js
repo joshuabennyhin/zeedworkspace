@@ -38,13 +38,13 @@ const Contacts=()=>{
       </div>
     </div>
           <div style={{textAlign:"center", paddingTop:isSmallScreen?"25px":"10px"}}>
-            <p style={{ fontSize:isSmallScreen?"16px":"20px",fontWeight:"normal",fontFamily:"g-light"}}>write to us at <span style={{fontWeight:"bolder",fontFamily:"g-bold"}}>hello@zeed.co.in</span></p>
+            <p style={{ fontSize:isSmallScreen?"20px":"20px",fontWeight:"normal",fontFamily:"g-light"}}>write to us at <span style={{fontWeight:"bolder",fontFamily:"g-bold"}}>hello@zeed.co.in</span></p>
           </div>
           <div style={{textAlign:"center",marginBottom:"5px"}}>
-            <p style={{fontSize:isSmallScreen?"12px":"14px",textDecoration:"underline" ,fontWeight:"normal",fontFamily:"g-light"}}>Privacy Policy <span style={{textDecoration:"underline",paddingLeft:"10px",fontWeight:"normal",fontFamily:"g-light"}}>Terms and conditions</span></p>
+            <p style={{fontSize:isSmallScreen?"13px":"14px",textDecoration:"underline" ,fontWeight:"normal",fontFamily:"g-light"}}>Privacy Policy <span style={{textDecoration:"underline",paddingLeft:"10px",fontWeight:"normal",fontFamily:"g-light"}}>Terms and conditions</span></p>
           </div>
           <div style={{textAlign:"center",paddingTop:isSmallScreen?"10px":"30px",paddingBottom:"20px"}}>
-            <p style={{fontSize:isSmallScreen?"14px":"13px",fontWeight:isSmallScreen?"bolder":"bold" ,fontFamily:"g-bold"}}>@Zeed Fintech Private Limited . <span style={{paddingLeft:"5px",fontWeight:isSmallScreen?"bolder":"bold"}}>All Rights Reserved</span></p>
+            <p style={{fontSize:isSmallScreen?"18px":"13px",fontWeight:isSmallScreen?"bolder":"bold" ,fontFamily:"g-bold"}}>@Zeed Fintech Private Limited . <span style={{paddingLeft:"5px",fontWeight:isSmallScreen?"bolder":"bold"}}>All Rights Reserved</span></p>
           </div>
   
   

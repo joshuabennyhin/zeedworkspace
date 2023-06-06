@@ -5,6 +5,8 @@ import { useEffect,useState } from "react";
 
 const Top=()=>{
    const [isSmallScreen, setIsSmallScreen] = useState(false);
+   const [isScrolled, setIsScrolled] = useState(false);
+   const [navbarColor,setnavbarColor]=useState("#FFF8E1")
   
     useEffect(() => {
       const mediaQuery = window.matchMedia('(max-width: 768px)');
@@ -20,18 +22,59 @@ const Top=()=>{
         mediaQuery.removeListener(handleMediaQueryChange);
       };
     }, []);
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setIsScrolled(true);
+          setnavbarColor("white")
+
+        }
+         if(window.screenY < 0 || window.screenY === 0)
+        {
+          setnavbarColor("#FFF8E1")
+        }
+        
+
+         else {
+          setnavbarColor("#FFF8E1")
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
 
     return(
 
         <div   style={{backgroundColor:"#FFF8E1", fontFamily: 'g-bold'}}  className="Main_container" class="Main_container">
-        <div style={{paddingTop:"35px",paddingBottom:"35px"}}>
+
+        {
+          isSmallScreen ? (
+            <div>
+ 
+            <div style={{paddingTop:"35px" }}>
+          <Navbar  bgcolor={navbarColor}/>
+          </div>
+
+            </div> 
+          ) : (
+            <div>
+            <div style={{paddingTop:"35px", position:isSmallScreen?"none":"fixed",top:isSmallScreen?"":"0",left:isSmallScreen?"":"0",right:isSmallScreen?"":"0",backgroundColor:{navbarColor}}}>
           <Navbar/>
           </div>
+             </div>
+          )
+        }
+       
     
           <div style={{backgroundColor:"#FFF8E1",
           
-          backgroundColor: "transparent",
+           paddingTop: isSmallScreen?"0px":"150px"
           
   }} class="container ">
 
@@ -46,18 +89,18 @@ const Top=()=>{
                       marginLeft:isSmallScreen?"0px":"100px",
                       marginTop:"100px",
                       
-                      backgroundColor:"#FFF8E1",
+                      backgroundColor: 'rgba(0.9804, 0.9765, 0.9294, 0)',
                       fontFamily: 'g-bold'
                      
     
                  }}class="container">
-                   <h2 style={{fontSize:isSmallScreen?"38px":"43px",fontWeight:"bold",fontFamily: 'g-bold'}}>
+                   <h2 style={{fontSize:isSmallScreen?"48px":"43px",fontWeight:"bold",fontFamily: 'g-bold'}}>
                     All Jewellery
                    </h2>
-                   <h1 style={{fontSize:isSmallScreen?"38px":"43px",fontWeight:"bold",fontFamily: 'g-bold'}}>
+                   <h1 style={{fontSize:isSmallScreen?"48px":"43px",fontWeight:"bold",fontFamily: 'g-bold'}}>
                     saving Plan in
                    </h1>
-                   <h1  style={{fontSize:isSmallScreen?"38px":"43px",fontWeight:"bold",color:"#FC772A",fontFamily: 'g-bold'}}>
+                   <h1  style={{fontSize:isSmallScreen?"48px":"43px",fontWeight:"bold",color:"#FC772A",fontFamily: 'g-bold'}}>
                     #1App
                    </h1>
                    <div style={{paddingBottom:"10px"}}>
