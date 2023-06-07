@@ -53,14 +53,16 @@ const About = () => {
           }}
           className="container"
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={4}>
               <Grid
                 sx={{
                   backgroundColor: '#808080',
                   borderRadius: 5,
                   border: '1px solid #FC772A',
-                  marginBottom: '40px'
+                  marginBottom: '40px',
+                
+                  
                 }}
                 container
                 spacing={2}

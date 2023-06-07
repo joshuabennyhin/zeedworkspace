@@ -45,7 +45,8 @@ const Navbar = () => {
         color:"black",
         fontWeight:"bold",
         fontSize:isSmallScreen?'13px':'16px',
-        fontFamily:"g-bold"
+        fontFamily:"g-bold",
+        border:"2px solid black"
       
        }}>
         Live Gold Rate
