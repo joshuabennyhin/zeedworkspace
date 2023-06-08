@@ -114,7 +114,7 @@ const YourComponent = () => {
           <div class="col-lg-4 col-sm-12">
           <div  style={{justifyContent:"right",textAlign:"right",marginLeft:"10px"}}className="image-content animate-right">
               <img
-                style={{ height: '546.45px', width: '908px',marginLeft:"80px"}}
+                style={{ height: '470px', width: '470px',marginLeft:"80px"}}
                 src="iPhone 13 Mockup.svg"
                 alt="Phone Frame"
                 className="phone-image"
@@ -447,12 +447,14 @@ const YourComponent = () => {
           </div>
           <div class="col-lg-4 col-sm-12">
             <div className="image-content animate-right">
-              <img
+              {/* <img
                 style={{ height: '500px', width: '450px', paddingTop: '40px' ,boxShadow:"30px"}}
                 src="Space Black.svg"
                 alt="Phone Frame"
                 className="phone-image"
-              />
+              /> */}
+              <div style={{height:"500px",width:"500px",backgroundImage:'url'}}>
+              </div>
             </div>
           </div>
         </div>

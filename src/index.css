@@ -353,11 +353,12 @@ code {
     }
 
    .main_container_2 {
-    background-image:  url("/public/Group 1171275558 (1).svg") ;
-    background-repeat: no-repeat;
-background-size: cover;
-position:"relative";
-z-index:1;
+    background-image:  url("/public/Space Black.svg") no-repeat center center fixed  ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
    }
 
 
