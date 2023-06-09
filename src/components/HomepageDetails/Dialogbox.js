@@ -5,7 +5,7 @@ const MComponent = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [currentInputIndex, setCurrentInputIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState('');
-  const [inputValues, setInputValues] = useState({});
+  const [inputs, setInputs] = useState(['', '', '', '', '']);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -30,7 +30,6 @@ const MComponent = () => {
     '4. Is there a specific jewellery store that you would recommend to be listed on our platform?',
     '5. Have you ever saved through jewellery saving plans before',
   ];
-  const inputs = ['', '', '', '', ''];
 
   const openDialog = () => {
     setDialogOpen(true);
@@ -40,11 +39,12 @@ const MComponent = () => {
   const closeDialog = () => {
     setDialogOpen(false);
     setCurrentInputIndex(0);
-    const updatedInputValues = {};
-    questions.forEach((question, index) => {
-      updatedInputValues[question] = inputs[index];
-    });
-    setInputValues(updatedInputValues);
+  };
+
+  const handleInputChange = (event) => {
+    const updatedInputs = [...inputs];
+    updatedInputs[currentInputIndex] = event.target.value;
+    setInputs(updatedInputs);
   };
 
   const nextInput = () => {
@@ -99,6 +99,7 @@ const MComponent = () => {
               padding: '20px',
               textAlign: 'center',
               borderRadius: '20px',
+              border:"2px solid #FC772A",
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
@@ -108,15 +109,23 @@ const MComponent = () => {
             <div style={{ alignItems: 'left', textAlign: 'left', margin: '20px' }}>
               <img style={{ height: isSmallScreen ? '30px' : '40px' }} src="artboard-2-4x-2@4x.png" alt="Logo" />
             </div>
-            <h2 style={{ margin: '10px 0', marginTop: '50px', width: '100%', textAlign: 'left', paddingBottom: '20px', fontSize: '17px', fontFamily: 'g-bold' }}>{questions[currentInputIndex]}</h2>
+            <h2
+              style={{
+                margin: '10px 0',
+                marginTop: '50px',
+                width: '100%',
+                textAlign: 'left',
+                paddingBottom: '20px',
+                fontSize: '17px',
+                fontFamily: 'g-bold',
+              }}
+            >
+              {questions[currentInputIndex]}
+            </h2>
             {currentInputIndex === inputs.length - 1 ? (
               <select
                 value={inputs[currentInputIndex]}
-                onChange={(e) => {
-                  const updatedInputs = [...inputs];
-                  updatedInputs[currentInputIndex] = e.target.value;
-                  setInputValues(updatedInputs);
-                }}
+                onChange={handleInputChange}
                 style={{
                   width: '100%',
                   padding: '5px',
@@ -128,11 +137,17 @@ const MComponent = () => {
                 <option value="no">No</option>
               </select>
             ) : (
-              <TextField style={{ width: '100%' }} id="standard-basic" variant="standard" value={inputs[currentInputIndex]} />
+              <TextField
+                style={{ width: '100%' }}
+                id="standard-basic"
+                variant="standard"
+                value={inputs[currentInputIndex]}
+                onChange={handleInputChange}
+              />
             )}
             <div style={{ margin: '20px 0' }}>
               {currentInputIndex < inputs.length - 1 && (
-                <button onClick={nextInput} type="button" className="btn btn-info">
+                <button style={{backgroundColor:"#FC772A"}} onClick={nextInput} type="button" className="btn btn-info">
                   Next
                 </button>
               )}
@@ -145,18 +160,6 @@ const MComponent = () => {
           </div>
         </div>
       )}
-      {/* {Object.keys(inputValues).length > 0 && (
-        <div>
-          <h2>Input Values</h2>
-          <ul>
-            {Object.entries(inputValues).map(([question, value]) => (
-              <li key={question}>
-                <strong>{question}:</strong> {value}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )} */}
     </div>
   );
 };
