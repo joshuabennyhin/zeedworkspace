@@ -11,7 +11,7 @@ import About from './components/HomepageDetails/About';
 import Top from './components/HomepageDetails/Top';
 import Carousel from './components/HomepageDetails/Carousel';
 import CarouselItem from './components/HomepageDetails/CarouselItem';
-
+import MComponent from './components/HomepageDetails/Dialogbox';
 import Y from './components/HomepageDetails/phones';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,17 +29,15 @@ const App = () => {
         <Route path="/" element={
 
           <div>
+         
                     <Top/>
   <About/>
   <ScrollAnimation/>
   <WhyZeed/>
   <EarlyAccess/>
-
   <FaqSection/>
-  
   <Contacts/>
- 
-  
+
           </div>
        } />
       

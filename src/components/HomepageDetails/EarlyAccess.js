@@ -1,4 +1,5 @@
 import Button from '@mui/material/Button';
+import MComponent from './Dialogbox';
 import { useState,useEffect } from 'react';
 
 const EarlyAccess=()=>{
@@ -27,18 +28,7 @@ const EarlyAccess=()=>{
               
               </div>
               <div style={{paddingTop:"40px",backgroundColor:isSmallScreen?"#FAF9ED":"white",paddingBottom:"50px",}}>
-              <a href="https://eoyk8cmil7j.typeform.com/to/DOW2dE2g">
-                <button style={{
-                paddingLeft:isSmallScreen?'50px':'80px',
-                paddingRight:isSmallScreen?'50px':'80px',
-                paddingTop: "5px",
-                paddingBottom:"5px",
-                borderRadius:'9px',
-                backgroundColor:"#FF5C01",
-                
-                
-
-                }}><h6 style={{fontSize:isSmallScreen?'14px':'20px',fontWeight:"bold",color:"white"}}>Get access</h6></button></a>
+             <MComponent/>
               </div>
        </div>
 

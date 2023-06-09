@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import { useEffect,useState } from "react";
+import MComponent from "./Dialogbox";
 
 
 
@@ -65,19 +66,8 @@ const Top=()=>{
                     <img  style={{height:"25px"}} src="play.svg"></img>
                    </div>
                    <div>
-                <a href="https://eoyk8cmil7j.typeform.com/to/DOW2dE2g">   <button style={{
-            height:"44px",
-            paddingLeft:"52px",
-            paddingRight:"52px",
-            border:"2px solid black",
-            borderRadius:"10px",
-            backgroundColor:"#FC762A",
-            color:"white",
-            fontWeight:"bold",
-            fontFamily: 'g-bold'
-           }}>
-            Get Access
-           </button></a>
+                   <MComponent/>
+             
     
                    </div>
                 

@@ -447,14 +447,13 @@ const YourComponent = () => {
           </div>
           <div class="col-lg-4 col-sm-12">
             <div className="image-content animate-right">
-              {/* <img
+              <img
                 style={{ height: '500px', width: '450px', paddingTop: '40px' ,boxShadow:"30px"}}
                 src="Space Black.svg"
                 alt="Phone Frame"
                 className="phone-image"
-              /> */}
-              <div style={{height:"500px",width:"500px",backgroundImage:'url'}}>
-              </div>
+              />
+             
             </div>
           </div>
         </div>

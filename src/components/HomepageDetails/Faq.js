@@ -46,7 +46,7 @@ const FaqSection = () => {
         <div  style={{borderRadius:"8px",backgroundColor:"white",padding:"10",left:"0"}} className="question-container" onClick={() => toggleAnswer(1)}>
           {onn1 ? (<div  style={{fontWeight:"bold",textAlign:"left",paddingLeft:isSmallScreen?'10px':'30px',fontSize:isSmallScreen?"16px":"16px",paddingTop:"10px"}}className="question-text">Why Should I use Zeed?</div>)
            :
-           (<div  style={{fontWeight:"bold",textAlign:"left",paddingLeft:'30px',paddingLeft:isSmallScreen?'10px':'30px',fontSize:isSmallScreen?"21px":"16px",
+           (<div  style={{fontWeight:"bold",textAlign:"left",paddingLeft:'30px',paddingLeft:isSmallScreen?'10px':'30px',fontSize:isSmallScreen?"16px":"16px",
            transition:"opacity 1s ease in out"
            
            }}className="question-text">Zeed simplifies online payment for saving schemes and offers a secure platform to buy gold through savings plans</div>)
@@ -60,7 +60,7 @@ const FaqSection = () => {
         <div  style={{borderRadius:"8px",backgroundColor:"white",padding:"10",left:"0"}} className="question-container" onClick={() => toggleAnswer(2)}>
           {onn2 ? (<div  style={{fontWeight:"bold",textAlign:"left",paddingLeft:isSmallScreen?'10px':'30px',fontSize:isSmallScreen?"16px":"16px"}}className="question-text">What is the minimum amount that i need to set aside every month?</div>)
            :
-           (<div  style={{fontWeight:"bold",textAlign:"left",paddingLeft:'30px',paddingLeft:isSmallScreen?'10px':'30px',fontSize:isSmallScreen?"21px":"16px"}}className="question-text">you can start a plan of purchase with minimum amount of $1,000 every month</div>)
+           (<div  style={{fontWeight:"bold",textAlign:"left",paddingLeft:'30px',paddingLeft:isSmallScreen?'10px':'30px',fontSize:isSmallScreen?"16px":"16px"}}className="question-text">you can start a plan of purchase with minimum amount of $1,000 every month</div>)
           }
           <div   style={{fontSize:"25px",paddingLeft:"30px"}} className="plus-icon">{expandedAnswers[2] ? '-' : '+'}</div>
         </div>
