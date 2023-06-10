@@ -115,7 +115,7 @@ const YourComponent = () => {
           <div  style={{justifyContent:"right",textAlign:"right",marginLeft:"10px"}}className="image-content animate-right">
               <img
                 style={{ height: '470px', width: '470px',marginLeft:"80px",objectFit: "contain"}}
-                src="iPhone 13 Mockup.jpg"
+                src="iPhone 13 Mockup.svg"
                 alt="Phone Frame"
                 className="phone-image"
               />
