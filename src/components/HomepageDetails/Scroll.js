@@ -114,7 +114,7 @@ const YourComponent = () => {
           <div class="col-lg-4 col-sm-12">
           <div  style={{justifyContent:"right",textAlign:"right",marginLeft:"10px"}}className="image-content animate-right">
               <img
-                style={{ height: '470px', width: '470px',marginLeft:"80px"}}
+                style={{ height: '470px', width: '470px',marginLeft:"80px",objectFit: "contain"}}
                 src="iPhone 13 Mockup.svg"
                 alt="Phone Frame"
                 className="phone-image"
@@ -252,7 +252,7 @@ const YourComponent = () => {
           <div class="col-lg-4 col-sm-12">
           <div  style={{justifyContent:"left",textAlign:"left",marginLeft:"10px"}}className="image-content animate-right">
               <img
-                style={{ height: '521px', width: '290.9px'}}
+                style={{ height: '521px', width: '290.9px',objectFit: "contain"}}
                 src="12.svg"
                 alt="Phone Frame"
                 className="phone-image"
@@ -359,7 +359,7 @@ const YourComponent = () => {
               >
                 <span style={{  }}>Buy Jewellery at </span>
                 <span> your </span>
-                <span style={{  fontWeight: 'bold', fontSize: isSmallScreen?'28px':'35px', textAlign: 'left', color: '#FC772A' }}>
+                <span style={{  fontWeight: 'bold', fontSize: isSmallScreen?'28px':'35px', textAlign: 'left', color: '#FC772A',objectFit: "contain" }}>
                   favorite store 
                 </span>
                 
