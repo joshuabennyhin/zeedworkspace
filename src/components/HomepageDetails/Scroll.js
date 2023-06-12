@@ -311,8 +311,8 @@ const YourComponent = () => {
 <div class="col-lg-3 col-sm-12">
 <div className="image-content animate-right">
 <img
-  style={{ height: '550px', width: '100%', paddingTop: '40px' ,boxShadow:"30px"}}
-  src="12.svg"
+  style={{ height: '450px', width: '90%', paddingTop: '40px' ,boxShadow:"30px"}}
+  src="zeed2.png"
   alt="Phone Frame"
   className="phone-image"
 />
@@ -448,8 +448,8 @@ const YourComponent = () => {
           <div class="col-lg-4 col-sm-12">
             <div className="image-content animate-right">
               <img
-                style={{ height: '500px', width: '450px', paddingTop: '40px' ,boxShadow:"30px"}}
-                src="Space Black.svg"
+                style={{height: '480px', width: '450px', paddingTop: '40px' ,boxShadow:"30px"}}
+                src="zeed3.png"
                 alt="Phone Frame"
                 className="phone-image"
               />
