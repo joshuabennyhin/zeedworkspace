@@ -57,9 +57,9 @@ const About = () => {
             <Grid item xs={12} sm={6} md={4}>
               <Grid
                 sx={{
-                  backgroundColor: '#808080',
+              
                   borderRadius: 5,
-                  border: '1px solid #FC772A',
+                 
                   marginBottom: '40px',
                 
                   
@@ -90,7 +90,7 @@ const About = () => {
                     <span
                       style={{
                         fontSize: '14px',
-                        paddingBottom: '15px',
+                     
                         fontWeight: 'bold',
                         color: 'white',
                         fontFamily: 'g-light',
@@ -105,12 +105,7 @@ const About = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Grid
-                sx={{
-                  backgroundColor: '#808080',
-                  borderRadius: 5,
-                  border: '1px solid #FC772A',
-                  marginBottom: '40px'
-                }}
+       
                 container
                 spacing={2}
               >
@@ -137,7 +132,7 @@ const About = () => {
                     <span
                       style={{
                         fontSize: '14px',
-                        paddingBottom: '15px',
+                      
                         fontWeight: 'bold',
                         color: 'white',
                         fontFamily: 'g-light',
@@ -152,12 +147,7 @@ const About = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Grid
-                sx={{
-                  backgroundColor: '#808080',
-                  borderRadius: 5,
-                  border: '1px solid #FC772A',
-                  marginBottom: '40px'
-                }}
+              
                 container
                 spacing={2}
               >
@@ -184,7 +174,7 @@ const About = () => {
                     <span
                       style={{
                         fontSize: '14px',
-                        paddingBottom: '15px',
+      
                         fontWeight: 'bold',
                         color: 'white',
                         fontFamily: 'g-light',
