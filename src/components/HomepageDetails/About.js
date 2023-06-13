@@ -53,14 +53,13 @@ const About = () => {
           }}
           className="container"
         >
-          <Grid container spacing={4}>
+          <Grid  style={{paddingBottom:"40px"}}container spacing={4}>
             <Grid item xs={12} sm={6} md={4}>
               <Grid
                 sx={{
               
                   borderRadius: 5,
-                 
-                  marginBottom: '40px',
+               
                 
                   
                 }}
@@ -136,7 +135,7 @@ const About = () => {
                         fontWeight: 'bold',
                         color: 'white',
                         fontFamily: 'g-light',
-                        marginBottom: '10px'
+               
                       }}
                     >
                       Every installment you paid till now is ensured
@@ -178,7 +177,7 @@ const About = () => {
                         fontWeight: 'bold',
                         color: 'white',
                         fontFamily: 'g-light',
-                        marginBottom: '10px'
+                     
                       }}
                     >
                       Means bank graded security and ISO compliance

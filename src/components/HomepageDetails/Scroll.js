@@ -253,7 +253,7 @@ const YourComponent = () => {
           <div  style={{justifyContent:"left",textAlign:"left",marginLeft:"10px"}}className="image-content animate-right">
               <img
                 style={{ height: '521px', width: '290.9px',objectFit: "contain"}}
-                src="12.svg"
+                src="zeed2.png"
                 alt="Phone Frame"
                 className="phone-image"
               />
@@ -382,7 +382,7 @@ const YourComponent = () => {
           <div  style={{justifyContent:"right",textAlign:"right",marginLeft:"10px"}}className="image-content animate-right">
               <img
                 style={{ height: '500.45px', width: '908px',marginLeft:"80px"}}
-                src="Space Black.svg"
+                src="zeed3.png"
                 alt="Phone Frame"
                 className="phone-image"
               />
