@@ -2,6 +2,7 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import HomePage from './components/Homepage';
 import WhyZeed from './components/HomepageDetails/WhyZeed';
+import {  useLocation, useNavigate } from 'react-router-dom';
 
 import EarlyAccess from './components/HomepageDetails/EarlyAccess';
 import ScrollAnimation from './components/HomepageDetails/Scroll';
@@ -24,10 +25,13 @@ import ReactGA from 'react-ga';
 
 
 const App = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   useEffect(() => {
     ReactGA.initialize('UA-273123498-1');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
   
   return (
     <Router>
