@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
 import HomePage from './components/Homepage';
 import WhyZeed from './components/HomepageDetails/WhyZeed';
 
@@ -16,11 +17,17 @@ import Y from './components/HomepageDetails/phones';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import ReactGA from 'react-ga';
+
 
 
 
 
 const App = () => {
+  useEffect(() => {
+    ReactGA.initialize('UA-273123498-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   
   return (
     <Router>
