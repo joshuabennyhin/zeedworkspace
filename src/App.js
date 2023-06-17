@@ -9,7 +9,7 @@ import ScrollAnimation from './components/HomepageDetails/Scroll';
 import Contacts from './components/HomepageDetails/Contact';
 import FaqSection from './components/HomepageDetails/Faq';
 import About from './components/HomepageDetails/About';
-
+import { useHistory } from 'react-router';
 import Top from './components/HomepageDetails/Top';
 import Carousel from './components/HomepageDetails/Carousel';
 import CarouselItem from './components/HomepageDetails/CarouselItem';
@@ -21,17 +21,20 @@ import './App.css'
 import ReactGA from 'react-ga';
 
 
+ReactGA.initialize('UA-273123498-1');
 
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 const App = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
-    ReactGA.initialize('UA-273123498-1');
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+   
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+
   
   return (
     <Router>
